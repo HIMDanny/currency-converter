@@ -1,5 +1,15 @@
+import Converter from './components/Converter/Converter';
+import Header from './components/Header';
+
 const App = () => {
-  return <div>Hello</div>;
+  return (
+    <>
+      <Header />
+      <main className="container mx-auto grow flex justify-center items-center">
+        <Converter />
+      </main>
+    </>
+  );
 };
 
 export default App;
