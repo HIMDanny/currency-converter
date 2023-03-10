@@ -1,6 +1,6 @@
 import axios from './axios';
 
-const convertCurrency = async ({ from, to, amount }) => {
+const convertCurrency = async ({ from, to, amount = 1 }) => {
   try {
     const { data } = await axios.get('convert', {
       params: {
