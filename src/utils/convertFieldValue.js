@@ -9,7 +9,8 @@ const convertFieldValue = (convertType, fieldValue, rate) => {
     convertedResult = fieldValue / rate;
   }
 
-  const formattedResult = fieldValue === '' ? fieldValue : convertedResult;
+  const formattedResult =
+    fieldValue === '' ? fieldValue : convertedResult.toFixed(3);
 
   return formattedResult;
 };
