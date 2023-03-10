@@ -13,6 +13,10 @@ const ConverterFieldSelect = (props) => {
     setIsDropdownOpen(false);
   };
 
+  const handleCloseDropdown = () => {
+    setIsDropdownOpen(false);
+  };
+
   const dropdownIcon = (
     <svg
       aria-hidden="true"
@@ -40,11 +44,13 @@ const ConverterFieldSelect = (props) => {
         {dropdownIcon}
       </button>
 
-      <ConverterFieldSelectDropdown
-        open={isDropdownOpen}
-        currencyList={props.currencyList}
-        onChange={handleDropdownItemChange}
-      />
+      {isDropdownOpen && (
+        <ConverterFieldSelectDropdown
+          currencyList={props.currencyList}
+          onChange={handleDropdownItemChange}
+          onClose={handleCloseDropdown}
+        />
+      )}
     </>
   );
 };
