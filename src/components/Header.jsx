@@ -26,7 +26,7 @@ const Header = () => {
   return (
     <header className="bg-green-700 py-3 shadow-lg">
       <div className="container mx-auto flex items-center justify-between text-white">
-        <p className="text-xl">Currency converter</p>
+        <p className="sm:text-xl">Currency converter</p>
         <div>
           <span>&#36; {currencies.USD.toFixed(2)}</span> /{' '}
           <span>&euro; {currencies.EUR.toFixed(2)}</span>
