@@ -29,6 +29,7 @@ const ConverterFieldSelectDropdown = (props) => {
     };
   }, []);
 
+  // in future keyboard keys support can be added so that user could navigate with their help
   const currencyItems = (
     <ul className="mt-1">
       {filteredList.map((item) => (
