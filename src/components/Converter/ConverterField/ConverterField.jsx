@@ -9,6 +9,7 @@ const ConverterField = (props) => {
           className="bg-slate-50 rounded-l-lg grow p-1 px-2 text-black focus:outline-green-700"
           type="text"
           placeholder="100.00"
+          autoComplete="off"
           name={props.name}
           id={props.id}
           value={props.value}
