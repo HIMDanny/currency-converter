@@ -37,7 +37,7 @@ const ConverterFieldSelect = (props) => {
     <>
       <button
         type="button"
-        className="flex justify-center bg-slate-50 border-l border-solid border-green-700 rounded-r-lg p-1 px-2 text-black focus:outline-green-700 items-center w-[80px]"
+        className="flex justify-center bg-slate-50 border-l border-solid border-green-700 rounded-r-lg p-1 px-2 text-black items-center w-[80px]"
         onClick={handleButtonClick}
       >
         {props.value}
