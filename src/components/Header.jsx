@@ -10,8 +10,8 @@ const Header = () => {
   useEffect(() => {
     const fetchHeaderCurrencies = async () => {
       const [usdToUah, eurToUah] = await Promise.all([
-        convertCurrency({ from: 'USD', to: 'UAH', amount: 1 }),
-        convertCurrency({ from: 'EUR', to: 'UAH', amount: 1 }),
+        convertCurrency({ from: 'USD', to: 'UAH' }),
+        convertCurrency({ from: 'EUR', to: 'UAH' }),
       ]);
 
       setCurrencies({
