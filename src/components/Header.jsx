@@ -20,7 +20,7 @@ const Header = () => {
       });
     };
 
-    // fetchHeaderCurrencies();
+    fetchHeaderCurrencies();
   }, []);
 
   return (
